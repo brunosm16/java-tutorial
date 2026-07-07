@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.baeldung.packages.VarargsUnitTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2026-07-07T14:47:15.147Z" hostname="IS201198" time="68.807">
+  <properties/>
+  <testcase name="whenCallingFirstOfFirst_thenClassCastException()" classname="com.baeldung.packages.VarargsUnitTest" time="68.793">
+    <failure message="java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')" type="java.lang.ClassCastException">java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+	at com.baeldung.packages.VarargsUnitTest.firstOfFirst(VarargsUnitTest.java:22)
+	at com.baeldung.packages.VarargsUnitTest.whenCallingFirstOfFirst_thenClassCastException(VarargsUnitTest.java:14)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
