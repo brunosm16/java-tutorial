@@ -7,6 +7,16 @@ public class BankAccount {
     String name;
     LocalDateTime openedAt;
     double balance;
+    private static final int MAX_SIZE;
+    int id;
+
+    {
+        id = 15;
+    }
+
+    static {
+        MAX_SIZE = 15;
+    }
 
     // No-argument constructor
     public BankAccount() {
@@ -35,6 +45,10 @@ public class BankAccount {
         this(name, LocalDateTime.now(), 157.70d);
     }
 
+    public int getId() {
+        return id;
+    }
+
     @Override
     public String toString() {
         return String.format("%s, %s, %f", this.name, this.openedAt.toString(), this.balance);
@@ -48,5 +62,7 @@ public class BankAccount {
         System.out.println("Printing second bank: " + bank2);
         BankAccount bank3 = new BankAccount("Itau");
         System.out.println("Printing third bank: " + bank3);
+        System.out.print("My constant ID: " + bank1.getId());
+        System.out.print("My static constant max size: " + BankAccount.MAX_SIZE);
     }
 }
